@@ -21,8 +21,9 @@ Le but est de fabriquer une malette/bombe comme dans le jeu, avec des modules in
   * L'interface électronique entre la bombe et les modules doit utiliser l'I2C, l'UART, la communication Série ? A DEFINIR
 * Chaque module doit être autonome dans sa gestion (avoir son propre micro-contrôleur).
 * Les modules doivent avoir un format standard et doivent être reprogrammables facilement (par exemple, micro-contrôleur avec port USB-C accessible).
-* Les modules doivent avoir un LED rouge/verte pour indiquer une erreur ou la réussite. C'est la bombe qui peut s'occuper du signal sonore en cas d'erreur (pour éviter d'avoir besoin d'un buzzer par module).
+* Les modules doivent avoir une LED rouge/verte pour indiquer une erreur ou la réussite. C'est la bombe qui peut s'occuper du signal sonore en cas d'erreur (pour éviter d'avoir besoin d'un buzzer par module).
 * Les modules doivent être les plus fidèles possibles. On limitera notamment le nombre d'écrans tactiles pour ne pas avoir l'impression de juste jouer sur une tablette.
+* Les modules doivent avoir un cache (numéroté) pour permettre de préparer la bombe sans savoir quels modules sont présents. Ces caches doivent être faciles à enlever (aimants ?) au début du jeu.
 * A COMPLETER
 
 ## Différents modules
@@ -30,7 +31,7 @@ Le but est de fabriquer une malette/bombe comme dans le jeu, avec des modules in
 Les noms et descriptions des modules viennent du [manuel de désamorcage](https://www.bombmanual.com/fr/print/KeepTalkingAndNobodyExplodes-BombDefusalManual-v1-fr.pdf). 
 
 #### Fils
-* 3-6 fils de couleur à couper (ou débrancher, mais c'est marrant de couper physiquement les fils)
+* 3-6 fils de couleur à débrancher (connecteur par friction, type terminal F1, au centre des fils)
 * Pour indiquer la couleur de chaque fil au module (nécessaire pour les régles de réussite), on peut imaginer avoir 5 connecteurs d'un côté, chacun correspondant à une couleur. Donc pour indiquer qu'un fil est rouge, il serait brancher dans le connecteur rouge. Chaque fil aurait donc 5 connecteurs, pour un total de 30 connecteurs disponibles (5x6 fils).
 
 #### Bouton
@@ -100,8 +101,10 @@ Les noms et descriptions des modules viennent du [manuel de désamorcage](https:
 #### Batteries
 * Contrôlées par la bombe
 * Vraies piles installées ou non sur les côtés de la bombe (AA, AAA, C ?)
+* Afficheur rotatif (comme les vieux panneaux de gare) pour réveler plus ou moins de piles
 
 #### Ports
 * Contrôlés par la bombe
 * ALED, aucune idée pour les implémenter
 * Certains ports installés, et activés en y branchant un câble ou non ?
+* * Afficheur rotatif (comme les vieux panneaux de gare) pour réveler des ports
