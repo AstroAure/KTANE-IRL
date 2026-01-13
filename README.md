@@ -32,7 +32,8 @@ Les noms et descriptions des modules viennent du [manuel de désamorcage](https:
 
 #### Fils
 * 3-6 fils de couleur à débrancher (connecteur par friction, type terminal F1, au centre des fils)
-* Pour indiquer la couleur de chaque fil au module (nécessaire pour les régles de réussite), on peut imaginer avoir 5 connecteurs d'un côté, chacun correspondant à une couleur. Donc pour indiquer qu'un fil est rouge, il serait brancher dans le connecteur rouge. Chaque fil aurait donc 5 connecteurs, pour un total de 30 connecteurs disponibles (5x6 fils).
+* ~~Pour indiquer la couleur de chaque fil au module (nécessaire pour les régles de réussite), on peut imaginer avoir 5 connecteurs d'un côté, chacun correspondant à une couleur. Donc pour indiquer qu'un fil est rouge, il serait brancher dans le connecteur rouge. Chaque fil aurait donc 5 connecteurs, pour un total de 30 connecteurs disponibles (5x6 fils).~~
+* Chaque fil embarque une résistance en fonction de sa couleur. Des ponts diviseurs de tension sont utilisés pour que le micro-contrôleur puisse mesurer la résistance des fils et en déduire leur couleur.
 
 #### Bouton
 * Nécessite que la bombe communique au module le temps restant (pour les cas avec la bande colorée)
@@ -60,7 +61,7 @@ Les noms et descriptions des modules viennent du [manuel de désamorcage](https:
 * Bouton pour valider
 
 #### Fils compliqués
-* Idem "Fils" pour gérer la couleur des fils, avec seulement 4 connecteurs (ou 2 en haut (blanc/bleu) et 2 en bas (blanc/rouge))
+* Idem "Fils" pour gérer la couleur des fils ~~, avec seulement 4 connecteurs (ou 2 en haut (blanc/bleu) et 2 en bas (blanc/rouge))~~
 * LED pour les lumières
 * LED avec masque étoile pour les étoiles
 
